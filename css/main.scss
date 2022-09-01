@@ -1,0 +1,43 @@
+@import 'base';
+@import 'variables';
+@import 'mixins';
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        blockquote{
+            max-width: 500px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        ul{
+            margin: auto;
+            @include reset-list(0,0,none);
+                li{
+                    background-color: $secondColor;
+                    display: block;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    width: 250px;
+                    border-radius: 60px;
+                    text-align: center;
+                        li:hover{
+                            background-color: $thirdColor;
+                            display: block;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                                
+                        }
+                        
+                }
+                
+        }
+
+}
